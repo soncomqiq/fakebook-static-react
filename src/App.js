@@ -1,13 +1,20 @@
 import React from 'react';
 import { Layout } from 'antd';
+import { Route, Switch } from 'react-router-dom'
 
-const { Header, Footer, Content } = Layout;
+const { Header, Content } = Layout;
 
 function App() {
   return (
     <Layout>
       <Header>Header</Header>
-      <Content>Content</Content>
+      <Content>
+        <Switch>
+          <Route exact path="/" component={() => <div>Home</div>} />
+          <Route exact path="/login" component={() => <div>login</div>} />
+          <Route exact path="/signup" component={() => <div>signup</div>} />
+        </Switch>
+      </Content>
     </Layout>
   );
 }
