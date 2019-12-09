@@ -94,7 +94,7 @@ export default class Home extends Component {
       <Row type='flex' justify="center">
         <Col xs={24} sm={16} md={12}>
           <Row>
-            <CreatePost />
+            <CreatePost avatarSrc="https://scontent.fbkk22-3.fna.fbcdn.net/v/t1.0-1/c0.0.24.24a/p24x24/71561886_1609849782479256_2419419055669641216_n.jpg?_nc_cat=111&_nc_oc=AQlLEzSt2ysLGxaBJ27i9_wKJe4xw4p1nN3uZZa5bLkBfO1CTt_LIUeILv_o_d7fDqQ&_nc_ht=scontent.fbkk22-3.fna&oh=c0125b6725de188bb0f9e5ff94ce72f8&oe=5E4A5531" />
           </Row>
           <Row>
             <PostList postList={this.state.postList} />

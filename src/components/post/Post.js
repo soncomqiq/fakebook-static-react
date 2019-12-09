@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Card, Row, Col, Avatar, Button } from 'antd'
 import Text from 'antd/lib/typography/Text'
+import CommentList from '../comment/CommentList'
 
 export default class Post extends Component {
   render() {
@@ -29,7 +30,7 @@ export default class Post extends Component {
           <img style={{ width: '100%' }} src={post.imgSrc} />
         </Row>
         <Row>
-          Comment
+          <CommentList commentList={post.commentList} />
         </Row>
       </Card>
     )
