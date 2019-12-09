@@ -91,14 +91,16 @@ export default class Home extends Component {
 
   render() {
     return (
-      <Col>
-        <Row>
-          <CreatePost />
-        </Row>
-        <Row>
-          <PostList postList={this.state.postList} />
-        </Row>
-      </Col>
+      <Row type='flex' justify="center">
+        <Col xs={24} sm={16} md={12}>
+          <Row>
+            <CreatePost />
+          </Row>
+          <Row>
+            <PostList postList={this.state.postList} />
+          </Row>
+        </Col>
+      </Row>
     )
   }
 }

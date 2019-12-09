@@ -1,11 +1,19 @@
 import React, { Component } from 'react'
 import { Col } from 'antd'
+import Post from './Post'
 
 export default class PostList extends Component {
   renderPostList() {
     return this.props.postList.map(post =>
-      <div>{post.author.name}<br />{post.message}<br />
-        <img style={{ height: '300px' }} src={post.author.profilePic} /></div>)
+      <Post key={post.id}
+        author={post.author}
+        message={post.message}
+        imgSrc={post.imgSrc}
+        date={post.date}
+        owner={post.owner}
+        commentList={post.commentList}
+      />
+    )
   }
 
   render() {
