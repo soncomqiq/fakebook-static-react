@@ -96,7 +96,7 @@ export default class Home extends Component {
           <CreatePost />
         </Row>
         <Row>
-          <PostList />
+          <PostList postList={this.state.postList} />
         </Row>
       </Col>
     )
