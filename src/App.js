@@ -1,9 +1,14 @@
 import React from 'react';
+import { Layout } from 'antd';
+
+const { Header, Footer, Content } = Layout;
 
 function App() {
   return (
-    <div>
-    </div>
+    <Layout>
+      <Header>Header</Header>
+      <Content>Content</Content>
+    </Layout>
   );
 }
 
