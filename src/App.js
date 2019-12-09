@@ -2,9 +2,9 @@ import React from 'react';
 import { Layout } from 'antd';
 import { Route, Switch } from 'react-router-dom'
 import { Redirect } from 'react-router'
-import Home from './components/pages/Home';
-import Login from './components/pages/Login';
-import SignUp from './components/pages/SignUp';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import SignUp from './pages/SignUp';
 
 const { Header, Content } = Layout;
 
